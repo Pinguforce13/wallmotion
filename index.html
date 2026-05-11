@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WallMotion — Geanimeerde Achtergronden</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">wall<span>motion</span></div>
+    <div class="tagline">6 stijlen · live preview · download als video</div>
+  </header>
+
+  <main>
+    <section class="gallery" id="gallery">
+      <!-- Cards worden gegenereerd door JS -->
+    </section>
+
+    <section class="preview-section">
+      <div class="preview-wrapper">
+        <canvas id="mainCanvas"></canvas>
+        <div class="preview-placeholder" id="placeholder">
+          <span>← kies een stijl</span>
+        </div>
+      </div>
+      <div class="controls">
+        <button id="dlBtn" class="dl-btn" disabled>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download als video
+        </button>
+        <span class="dl-info" id="dlInfo">Selecteer eerst een stijl</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>WallMotion &mdash; gebruik <strong>Wallpaper Engine</strong> op Steam om .webm als achtergrond in te stellen</span>
+  </footer>
+
+  <script src="wallpapers.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
